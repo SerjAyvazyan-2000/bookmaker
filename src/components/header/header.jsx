@@ -289,12 +289,12 @@ const Header = () => {
                         </li>
                         <li className='menu-item'>
                             <Link className='menu-link' to={'/casino'}>
-                                <span>Казино</span>
+                                <span>Casino</span>
                             </Link>
                         </li>
                         <li className='menu-item'>
                             <Link className='menu-link' to={''}>
-                                <span>Live-Казино</span>
+                                <span>Live Casino</span>
                             </Link>
                         </li>
                         <li className='menu-item'>
