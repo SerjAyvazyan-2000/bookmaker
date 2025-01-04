@@ -1,0 +1,176 @@
+
+.express-box {
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.icon-arrow-right {
+  font-size: 15px;
+  background: white;
+  cursor: pointer;
+}
+
+.icon-arrow-left {
+  font-size: 15px;
+  background: white;
+  transform: rotate(180deg);
+}
+
+.express-block-left {
+  max-width: 684px;
+  width: 100%;
+}
+
+.express-block-right {
+  max-width: 684px;
+  width: 100%;
+}
+
+.express-header-info {
+  background-color: #003266;
+  padding: 10px;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.express-live-header-info{
+  background-color: #88c00d;
+  padding: 10px;
+  gap: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.express-header-tools {
+  gap: 10px;
+
+
+}
+
+.express-header-text {
+  gap: 10px;
+
+  p {
+    color: #fff;
+    text-transform: uppercase;
+
+  }
+}
+
+.express-tools-count {
+  color: #427dbe;
+}
+
+.express-info-cnt {
+  margin-top: 4px;
+  gap: 2px;
+  padding-left: 55px;
+  padding-bottom: 15px;
+  background-color: #e8ecf1;
+  min-height: 80px;
+  border-radius: 10px;
+}
+
+.express-data {
+  color: #6b7d8e;
+  font-size: 13px;
+}
+
+.express-country {
+  color: #6b7d8e;
+  font-size: 13px;
+}
+
+.express-places {
+  font-weight: 600;
+}
+
+.express-cnt-header {
+  background-color: #094b95;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.express-live-cnt-header{
+  background-color: #88c00d;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.express-cnt-header-text {
+  margin-left: 30px;
+
+  p {
+    color: #fff;
+  }
+}
+
+.express-cnt-number {
+  p {
+    color: #fff;
+  }
+}
+
+.express-coefficient {
+  background: white;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.express-coefficient-btn{
+
+  button {
+    font-size: 18px;
+    min-height: 40px;
+    background-color: #003266;
+    background-image: linear-gradient(to top, #003266, #094b95);
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    line-height: 1.1;
+    padding: 2px 10px;
+    max-width: 260px;
+    width: 100%;
+    text-align: center;
+  }
+}
+.express-coefficient-texts {
+  p {
+    color: #000;
+    font-weight: 600;
+
+  }
+
+  span {
+    color: #fff;
+    border-radius: 15px;
+    background-color: #fa4d00;
+    padding: 2px 12px;
+    font-size: 14px;
+  }
+}
+
+.express-live-coefficient-btn{
+  button {
+    font-size: 18px;
+    min-height: 40px;
+    background-color: #88c00d;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    line-height: 1.1;
+    padding: 2px 10px;
+    max-width: 260px;
+    width: 100%;
+    text-align: center;
+  }
+}

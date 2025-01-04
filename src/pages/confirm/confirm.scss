@@ -1,0 +1,68 @@
+
+
+.confirm-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.confirm-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.confirm-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.confirm-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: border 0.3s ease;
+}
+
+.confirm-input:focus {
+  border-color: #4f8a8b;
+  outline: none;
+}
+
+.confirm-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4f8a8b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #3d6e6b;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin: 10px 0;
+}

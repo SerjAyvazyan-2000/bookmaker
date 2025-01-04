@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
+.icon-android{
+    mask-image: url(android.svg);
+    -webkit-mask-image: url(android.svg);
+}
+
+
+.icon-iphone{
+    mask-image: url(iphone.svg);
+    -webkit-mask-image: url(iphone.svg);
+}
+.icon-blockages{
+    mask-image: url(blockages.svg);
+    -webkit-mask-image: url(blockages.svg);
+}
+.icon-odds-format{
+    mask-image: url(oddsFormat.svg);
+    -webkit-mask-image: url(oddsFormat.svg);
+}
+.icon-arrow-down{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-arrow-down-black{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-clock{
+    mask-image: url(clock.svg);
+    -webkit-mask-image: url(clock.svg);
+}
+.icon-discount{
+    mask-image: url(discount.svg);
+    -webkit-mask-image: url(discount.svg);
+}
+.icon-top-up{
+    mask-image: url(topUp.svg);
+    -webkit-mask-image: url(topUp.svg);
+}
+.icon-user{
+    mask-image: url(user.svg);
+    -webkit-mask-image: url(user.svg);
+}
+.icon-account-sub1{
+    mask-image: url(accountSub.svg);
+    -webkit-mask-image: url(accountSub.svg);
+}
+.icon-account-sub2{
+    mask-image: url(accountSub2.svg);
+    -webkit-mask-image: url(accountSub2.svg);
+}
+.icon-account-sub3{
+    mask-image: url(accountSub3.svg);
+    -webkit-mask-image: url(accountSub3.svg);
+}
+.icon-account-sub4{
+    mask-image: url(accountSub4.svg);
+    -webkit-mask-image: url(accountSub4.svg);
+}
+.icon-account-sub5{
+    mask-image: url(accountSub5.svg);
+    -webkit-mask-image: url(accountSub5.svg);
+}
+.icon-account-sub6{
+    mask-image: url(accountSub6.svg);
+    -webkit-mask-image: url(accountSub6.svg);
+}
+.icon-account-sub7{
+    mask-image: url(accountSub7.svg);
+    -webkit-mask-image: url(accountSub7.svg);
+}
+.icon-account-sub8{
+    mask-image: url(accountSub8.svg);
+    -webkit-mask-image: url(accountSub8.svg);
+}
+.icon-account-sub9{
+    mask-image: url(accountSub9.svg);
+    -webkit-mask-image: url(accountSub9.svg);
+}
+.icon-account-sub10{
+    mask-image: url(accountSub10.svg);
+    -webkit-mask-image: url(accountSub10.svg);
+}
+.icon-basket{
+    mask-image: url(basket.svg);
+    -webkit-mask-image: url(basket.svg);
+}
+.icon-live{
+    mask-image: url(live.svg);
+    -webkit-mask-image: url(live.svg);
+}
+.icon-line{
+    mask-image: url(line.svg);
+    -webkit-mask-image: url(line.svg);
+}
+.icon-search{
+    mask-image: url(search.svg);
+    -webkit-mask-image: url(search.svg);
+}
+.icon-star{
+    mask-image: url(star.svg);
+    -webkit-mask-image: url(star.svg);
+}
+.icon-experience{
+    mask-image: url(experience.svg);
+    -webkit-mask-image: url(experience.svg);
+}
+.icon-arrow-down-gray{
+    mask-image: url(arrowDown.svg);
+    -webkit-mask-image: url(arrowDown.svg);
+}
+.icon-arrow-right{
+    mask-image: url(arrowRight.svg);
+    -webkit-mask-image: url(arrowRight.svg);
+}
+.icon-arrow-right-blue{
+    mask-image: url(arrowRight.svg);
+    -webkit-mask-image: url(arrowRight.svg);
+}
+.icon-arrow-left{
+    mask-image: url(arrowRight.svg);
+    -webkit-mask-image: url(arrowRight.svg);
+}
+.icon-telegram{
+    mask-image: url(telegram.svg);
+    -webkit-mask-image: url(telegram.svg);
+}
+.icon-home{
+    mask-image: url(home.svg);
+    -webkit-mask-image: url(home.svg);
+}
+.icon-star2{
+    mask-image: url(star2.svg);
+    -webkit-mask-image: url(star2.svg);
+}
+.icon-time{
+    mask-image: url(time.svg);
+    -webkit-mask-image: url(time.svg);
+}
+.icon-badge{
+    mask-image: url(badge.svg);
+    -webkit-mask-image: url(badge.svg);
+}
+.icon-badge2{
+    mask-image: url(badge2.svg);
+    -webkit-mask-image: url(badge2.svg);
+}
+.icon-selection{
+    mask-image: url(selection.svg);
+    -webkit-mask-image: url(selection.svg);
+}
+.icon-arrow-line{
+    mask-image: url(arrowLine.svg);
+    -webkit-mask-image: url(arrowLine.svg);
+}
+.icon-winners{
+    mask-image: url(winners.svg);
+    -webkit-mask-image: url(winners.svg);
+}
+.icon-playStar{
+    mask-image: url(playStar.svg);
+    -webkit-mask-image: url(playStar.svg);
+}
+.icon-filter1{
+    mask-image: url(filter1.svg);
+    -webkit-mask-image: url(filter1.svg);
+}
+.icon-star-blue{
+    mask-image: url(starBlue.svg);
+    -webkit-mask-image: url(starBlue.svg);
+}
+.icon-lightning{
+    mask-image: url(lightning.svg);
+    -webkit-mask-image: url(lightning.svg);
+}
+.icon-cup{
+    mask-image: url(cup.svg);
+    -webkit-mask-image: url(cup.svg);
+}
+.menu-icon{
+    mask-image: url(menuIcon.svg);
+    -webkit-mask-image: url(menuIcon.svg);
+}
+.menu-icon2{
+    mask-image: url(menuIcon2.svg);
+    -webkit-mask-image: url(menuIcon2.svg);
+}
+.menu-icon3{
+    mask-image: url(../images/menuIcon3.svg);
+    -webkit-mask-image: url(../images/menuIcon3.svg);
+}
+.icon-slots{
+    mask-image: url(slots.svg);
+    -webkit-mask-image: url(slots.svg);
+}
+.icon-roulette{
+    mask-image: url(roulette.svg);
+    -webkit-mask-image: url(roulette.svg);
+}
+.icon-cards{
+    mask-image: url(cards.svg);
+    -webkit-mask-image: url(cards.svg);
+}
+.icon-lotteries{
+    mask-image: url(lotteries.svg);
+    -webkit-mask-image: url(lotteries.svg);
+}
+.icon-jackpots{
+    mask-image: url(jackpots.svg);
+    -webkit-mask-image: url(jackpots.svg);
+}
+.icon-fast-games{
+    mask-image: url(fastGames.svg);
+    -webkit-mask-image: url(fastGames.svg);
+}
+.icon-virtual-sport{
+    mask-image: url(virtualSport.svg);
+    -webkit-mask-image: url(virtualSport.svg);
+}
+.icon-star-red{
+    mask-image: url(starRed.svg);
+    -webkit-mask-image: url(starRed.svg);
+}
+.icon-balance{
+    mask-image: url(balance.svg);
+    -webkit-mask-image: url(balance.svg);
+}
+.icon-settings{
+    mask-image: url(settings.svg);
+    -webkit-mask-image: url(settings.svg);
+}
+.icon-menu-user{
+    mask-image: url(menuUser.svg);
+    -webkit-mask-image: url(menuUser.svg);
+}
+.icon-menu-balance{
+    mask-image: url(balance.svg);
+    -webkit-mask-image: url(balance.svg);
+}
+.icon-withdraw{
+    mask-image: url(withdraw.svg);
+    -webkit-mask-image: url(withdraw.svg);
+}
+.icon-invite{
+    mask-image: url(invite.svg);
+    -webkit-mask-image: url(invite.svg);
+}
+.icon-log-out{
+    mask-image: url(logOut.svg);
+    -webkit-mask-image: url(logOut.svg);
+}
+.icon-bonusPacket{
+    mask-image: url(bonusPacket.svg);
+    -webkit-mask-image: url(bonusPacket.svg);
+}

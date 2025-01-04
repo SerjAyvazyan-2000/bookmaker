@@ -1,0 +1,558 @@
+
+.winners-slider {
+  height: 360px;
+}
+
+.casino-slider-block {
+  min-height: 460px;
+  background-color: rgb(0, 35, 71);
+  position: relative;
+  margin-top: 110px;
+
+}
+
+.winners-vertical-list {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+  width: 240px;
+  height: 360px;
+  background: linear-gradient(180deg, #003266 20.83%, #00234700);
+  border-radius: 15px;
+
+}
+
+.icon-winners {
+  background: black;
+  font-size: 18px;
+}
+
+.winners-header {
+  padding: 10px;
+  gap: 10px;
+}
+
+.winners-header-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ffba00;
+}
+
+.winners-header-title {
+  color: #428cdc;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.winners-item {
+  gap: 10px;
+}
+
+.winners-item-image {
+  width: 60px;
+  max-height: 40px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.winners-item-name {
+  margin-top: 3px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #1183d3;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+
+.winners-item-tools {
+  gap: 10px;
+  margin-top: 5px;
+  transition: .3s;
+}
+
+.title-amount {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #ffba00;
+  line-height: 16px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.winners-item-header {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.winners-item-descr {
+  position: relative;
+  cursor: pointer;
+
+
+  &:hover {
+    .winners-sub-cnt {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .winners-item-header {
+      opacity: .3;
+    }
+
+    .winners-item-tools {
+      opacity: .3;
+
+    }
+  }
+}
+
+.winners-sub-cnt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.winners-sub-bnt {
+  max-width: 90%;
+  gap: 10px;
+  height: 40px;
+  box-shadow: 0 10px 30px #fa410066;
+  background-image: linear-gradient(to top, #fa4d00 0%, #fa4d00 100%);
+  line-height: 40px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+
+  span {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+  }
+}
+
+.icon-playStar {
+  background: #fc9a66;
+  font-size: 40px;
+}
+
+.casino-lists {
+  padding-left: calc(240px + 2 * 20px);
+
+}
+
+.filters-block {
+  border-bottom: 2px solid #003266;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  padding: 20px 0;
+  gap: 30px;
+}
+
+.icon-filter1 {
+  background: #003266;
+  font-size: 20px;
+}
+
+.filter-title {
+  gap: 10px;
+
+  p {
+    color: #428cdc;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+}
+
+.filter-item {
+  gap: 15px;
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.casino-games-list {
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.slider-arrows-all {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #003266;
+  text-decoration: none;
+  transition: .2s;
+  position: relative;
+  padding: 10px 20px;
+  gap: 10px;
+  cursor: pointer;
+
+  span {
+    color: white;
+  }
+}
+
+.games-header-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.casino-games-header {
+  align-items: center;
+}
+
+.games-header-info {
+  gap: 10px;
+
+}
+
+.games-slider-arrows {
+  gap: 40px;
+
+  i {
+    cursor: pointer;
+  }
+
+}
+
+.games-header-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.casino-games-cnt {
+  margin-top: 20px;
+}
+
+.games-item {
+  max-width: 268px;
+  width: 100%;
+  height: 190px;
+  position: relative;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    .game-item-sub {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.icon-star-blue {
+  font-size: 20px;
+  background: #1183d3;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.game-item-sub {
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.game-sub-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  transition: .3s;
+
+  button {
+    border-radius: 20px;
+    padding: 3px 10px;
+    color: #002347;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .4s;
+    background-color: #428cdc;
+  }
+
+  &:hover {
+    button {
+      color: white;
+
+    }
+  }
+}
+
+.game-sub-title {
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  transform: translateX(-50%);
+  color: #99caff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .3s;
+}
+
+.game-sub-play {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-sub-star {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: .3s;
+
+  &:hover {
+    i {
+      background: #ffba00;
+
+    }
+  }
+}
+
+.game-icon-clue {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+
+
+}
+
+.icon-clue-red {
+  left: 10px;
+  top: 10px;
+  background: #fa4d00;
+
+}
+
+.icon-clue-blue {
+  background-color: #35a1dd;
+  left: 10px;
+  top: 40px;
+}
+
+.icon-lightning {
+  font-size: 16px;
+  background: white;
+}
+
+.icon-cup {
+  font-size: 16px;
+  background: white;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.all-games-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.casino-left-side {
+  position: fixed;
+  top: 140px;
+  max-width: 240px;
+  width: 100%;
+}
+
+.left-side-top-block {
+  background-color: #003266;
+  border-radius: 15px 15px 0 0;
+}
+
+.promotion-banner {
+  padding: 10px;
+}
+
+.promotion-banner-img {
+  margin-top: -20px;
+}
+
+.promotion-btn {
+
+  button {
+    display: inline-block;
+    margin-top: -7px;
+    padding: 10px 15px;
+    box-shadow: 0 11px 27px #fa4100a1;
+    background-color: #fa4d00;
+    background-image: linear-gradient(to top, #fa4d00 0%, #fa4d00 100%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+  }
+}
+
+.menu-icon {
+  font-size: 40px;
+  background: #1183d3;
+}
+
+.menu-icon3 {
+  font-size: 40px;
+  background: #1183d3;
+}
+
+.menu-icon2 {
+  font-size: 40px;
+  background: #1183d3;
+}
+
+.promotion-menu-list {
+  margin-top: 5px;
+}
+
+.promotion-menu-link {
+  gap: 10px;
+  padding: 0 10px;
+
+  span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #ffffff;
+    transition: .3s;
+  }
+
+  &:hover {
+    span {
+      color: #1183d3;
+    }
+  }
+
+}
+
+.promotion-menu-icon {
+  width: 40px;
+}
+
+.promotion-menu-item {
+  border-bottom: 1px solid #09519e;
+}
+
+.promotion-search {
+  padding: 10px;
+}
+
+.promotion-search-label {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #0d4177;
+  transition: .4s;
+  padding: 10px 0;
+
+  input {
+    padding: 0 0 0 35px;
+    color: white;
+  }
+}
+
+.promotion-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}
+
+.genres-menu-item {
+  border-bottom: 1px solid  #9ea7b2;
+
+  &:last-child{
+    border-bottom: none;
+  }
+}
+
+.genres-menu-link {
+  padding: 5px 10px;
+  gap: 10px;
+
+  span {
+    color: #000000;
+    transition: .3s;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    span {
+      color: #1183d3;
+    }
+  }
+}
+
+.genres-menu {
+  border-radius: 16px;
+  background-color: white;
+}
+.genres-menu-icon{
+  background: #9ea7b2;
+  font-size: 40px;
+}
+.icon-fast-games{
+  background: #1183d3;
+  font-size: 40px;
+}
+.icon-virtual-sport{
+  background: #1183d3;
+  font-size: 40px;
+}
