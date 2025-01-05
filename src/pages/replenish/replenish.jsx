@@ -535,7 +535,7 @@ const Replenish = () => {
                                         </div>
                                         <div className='qr-info-item G-justify-between'>
                                             <p>Exchange rate</p>
-                                            <p>1 USDT (BEP20) = 13139.22 UZS</p>
+                                            <p>1 USDT ({selectedOption}) = 13139.22 UZS</p>
                                         </div>
                                         <div className='qr-info-item G-justify-between'>
                                             <p>Minimum amount</p>

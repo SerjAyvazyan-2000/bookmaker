@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import {A11y, Autoplay} from "swiper/modules";
+import {A11y, Autoplay, Pagination} from "swiper/modules";
 import smail from '../../assets/icons/smail.svg'
 import lightningGold from '../../assets/icons/lightningGold.svg'
 import crash from '../../assets/images/CRASH.svg'
@@ -14,14 +14,19 @@ import recommend from '../../assets/images/RECOMMEND.svg'
 import newYear from '../../assets/images/newYear.svg'
 import allGames from '../../assets/images/allGames.svg'
 import promotionBanner from '../../assets/images/promotionBanner.svg'
-import menuIcon3 from '../../assets/images/menuIcon3.svg'
 
 import CasinoGames from "../../components/casinoGames/casinoGames";
-import gameitem from "../../assets/icons/gameitem.webp";
-import gamesitemText from "../../assets/icons/gamesitemText.svg";
 import playicon from "../../assets/images/play.svg";
 import {Link} from "react-router-dom";
-
+import slot1 from "../../assets/images/slot1.webp";
+import slot2 from "../../assets/images/slot2.webp";
+import slot3 from "../../assets/images/slot3.webp";
+import slot5 from "../../assets/images/slot5.webp";
+import casinoSlide1 from "../../assets/images/casinoSlide1.webp";
+import casinoSlide2 from "../../assets/images/casinoSlide2.webp";
+import casinoSlide3 from "../../assets/images/casinoSlide3.webp";
+import casinoSlide4 from "../../assets/images/casinoSlide4.webp";
+import casinoSlide5 from "../../assets/images/casinoSlide5.webp";
 
 const Casino = () => {
     const swiperRef = useRef(null);
@@ -36,6 +41,48 @@ const Casino = () => {
 
     return <div className='casino-section'>
         <div className='casino-slider-block'>
+
+            <div className='casino-slider-body'>
+                <Swiper
+                    slidesPerView={1}
+                    loop={true}
+                    pagination={true}
+                    modules={[Pagination]}
+
+                >
+                    <SwiperSlide>
+                        <div className='casino-slider-item'>
+                            <img src={casinoSlide1} alt=""/>
+                        </div>
+                    </SwiperSlide>
+
+
+                    <SwiperSlide>
+                        <div className='casino-slider-item'>
+                            <img src={casinoSlide2} alt=""/>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='casino-slider-item'>
+                            <img src={casinoSlide3} alt=""/>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='casino-slider-item'>
+                            <img src={casinoSlide4} alt=""/>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className='casino-slider-item'>
+                            <img src={casinoSlide5} alt=""/>
+                        </div>
+                    </SwiperSlide>
+
+                </Swiper>
+
+            </div>
+
             <div className='winners-vertical-list'>
                 <div className='winners-header G-align-center'>
                     <div className='winners-header-icon'>
@@ -243,10 +290,9 @@ const Casino = () => {
                         </div>
 
                         <div className='all-games-list'>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -264,10 +310,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot2} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -285,10 +330,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -306,10 +350,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -327,10 +370,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot5} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -348,31 +390,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -391,10 +411,9 @@ const Casino = () => {
 
                             </div>
 
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -412,10 +431,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot2} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -433,10 +451,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -454,10 +471,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -475,10 +491,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot5} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -496,31 +511,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -539,10 +532,9 @@ const Casino = () => {
 
                             </div>
 
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -560,10 +552,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot2} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -581,10 +572,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -602,10 +592,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -623,10 +612,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot5} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -644,94 +632,9 @@ const Casino = () => {
                                 </div>
 
                             </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
+                            <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div style={{backgroundImage: `url(${gameitem})`}}
-                                 className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={gamesitemText} alt=""/>
+                                    <img src={slot1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>

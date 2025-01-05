@@ -1,8 +1,12 @@
 import React, {useRef} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
-import gameitem from "../../assets/icons/gameitem.webp";
-import gamesitemText from "../../assets/icons/gamesitemText.svg";
+import slot1 from "../../assets/images/slot1.webp";
+import slot2 from "../../assets/images/slot2.webp";
+import slot3 from "../../assets/images/slot3.webp";
+import slot4 from "../../assets/images/slot4.webp";
+import slot5 from "../../assets/images/slot5.webp";
+
 import playicon from "../../assets/images/play.svg";
 
 const CasinoGames = ({title,icon,slidesPerView}) => {
@@ -30,13 +34,35 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 slidesPerView={slidesPerView}
                 navigation
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
+                breakpoints={{
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
+                    1440: {
+                        slidesPerView: 4,
+                    },
+                    1600: {
+                        slidesPerView: 5,
+                    },
+                    1920: {
+                        slidesPerView: slidesPerView,
+                    },
+                }}
 
             >
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
+                    <div
                          className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot1} alt=""/>
                         </div>
 
 
@@ -58,10 +84,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
+                    <div
                          className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot2} alt=""/>
                         </div>
                         <div className='game-icon-clue icon-clue-red'>
                             <i className='icon icon-lightning'></i>
@@ -88,10 +114,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
+                    <div
                          className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot3} alt=""/>
                         </div>
 
 
@@ -112,10 +138,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
+                    <div
                          className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot4} alt=""/>
                         </div>
                         <div className='game-icon-clue icon-clue-red'>
                             <i className='icon icon-lightning'></i>
@@ -141,10 +167,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
+                    <div
                          className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot5} alt=""/>
                         </div>
 
 
@@ -166,10 +192,35 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
-                         className='games-item G-image  G-center'>
+                    <div
+                        className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot1} alt=""/>
+                        </div>
+
+
+                        <div className='game-item-sub'>
+                            <h3 className='game-sub-title'>Playson</h3>
+                            <div className='game-sub-play'>
+                                <img src={playicon} alt=""/>
+                            </div>
+                            <div className='game-sub-star'>
+                                <i className='icon icon-star-blue'></i>
+                            </div>
+                            <div className='game-sub-btn'>
+                                <button>Play for free</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div
+                        className='games-item G-image  G-center'>
+                        <div className='games-item-text'>
+                            <img src={slot2} alt=""/>
                         </div>
                         <div className='game-icon-clue icon-clue-red'>
                             <i className='icon icon-lightning'></i>
@@ -196,10 +247,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
-                         className='games-item G-image  G-center'>
+                    <div
+                        className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot3} alt=""/>
                         </div>
 
 
@@ -220,10 +271,10 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div style={{backgroundImage: `url(${gameitem})`}}
-                         className='games-item G-image  G-center'>
+                    <div
+                        className='games-item G-image  G-center'>
                         <div className='games-item-text'>
-                            <img src={gamesitemText} alt=""/>
+                            <img src={slot4} alt=""/>
                         </div>
                         <div className='game-icon-clue icon-clue-red'>
                             <i className='icon icon-lightning'></i>
@@ -231,6 +282,30 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                         <div className='game-icon-clue icon-clue-blue'>
                             <i className='icon icon-cup'></i>
                         </div>
+
+                        <div className='game-item-sub'>
+                            <h3 className='game-sub-title'>Playson</h3>
+                            <div className='game-sub-play'>
+                                <img src={playicon} alt=""/>
+                            </div>
+                            <div className='game-sub-star'>
+                                <i className='icon icon-star-blue'></i>
+                            </div>
+                            <div className='game-sub-btn'>
+                                <button>Play for free</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className='games-item G-image  G-center'>
+                        <div className='games-item-text'>
+                            <img src={slot5} alt=""/>
+                        </div>
+
 
                         <div className='game-item-sub'>
                             <h3 className='game-sub-title'>Playson</h3>

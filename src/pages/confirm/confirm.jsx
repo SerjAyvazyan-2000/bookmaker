@@ -3,7 +3,7 @@ import './confirm.scss';
 import {useBalance} from "../../BalanceContext";
 
 const Confirm = () => {
-    const { balance, setBalance } = useBalance();
+    const {balance, setBalance} = useBalance();
     const [inputValue, setInputValue] = useState("");
     const [error, setError] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
@@ -36,6 +36,12 @@ const Confirm = () => {
             setError("");
         }
     };
+    const handleRemove = () => {
+        setBalance(0)
+        setInputValue('')
+        setSuccessMessage("");
+
+    }
 
 
     return (
@@ -53,6 +59,9 @@ const Confirm = () => {
                 {successMessage && <p className="success-message">{successMessage}</p>}
                 <button className="confirm-button" onClick={handleSubmit}>
                     OK
+                </button>
+                <button className="delete-button" onClick={handleRemove}>
+                    Delete
                 </button>
             </div>
         </div>

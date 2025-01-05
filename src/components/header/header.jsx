@@ -3,6 +3,7 @@ import './header.scss'
 
 import en from '../../assets/images/en.svg'
 import freeMoney from '../../assets/images/freeMoney.webp'
+import logo from '../../assets/images/logo.svg'
 
 import {Link} from "react-router-dom";
 import {useBalance} from "../../BalanceContext";
@@ -29,22 +30,7 @@ const Header = () => {
     };
 
 
-    // useEffect(() => {
-    //     fetch('http://worldtimeapi.org/api/timezone')
-    //         .then(response => {
-    //             if (!response.ok) {
-    //                 throw new Error('Ошибка запроса');
-    //             }
-    //             return response.json();
-    //         })
-    //         .then(data => {
-    //             const formattedData = data.flatMap(item => item.split('\n'));
-    //             setTimezones(formattedData);
-    //         })
-    //         .catch(error => {
-    //             console.error('Ошибка:', error);
-    //         });
-    // }, []);
+
 
 
     return <header>
@@ -129,7 +115,7 @@ const Header = () => {
                 <div className='header-bottom-actions G-align-center'>
                     <Link to={'/replenish'} onClick={()=>toggleMenuVisibility('isTopUpVisible')} className={`top-up-btn G-align-center`}>
                         <i className='icon icon-top-up'></i>
-                        <span>{balance} so'm</span>
+                        <span>{balance} $</span>
                         <span>Top up</span>
                         <i className='icon icon-arrow-down-black'></i>
                         {/*<div className={`top-up-sub-block ${menuVisibility.isTopUpVisible ? 'active ' : ''}`}>*/}
@@ -259,7 +245,7 @@ const Header = () => {
             </div>
             <div className='header-top G-align-center'>
                 <Link className='header-logo' to={'/home'}>
-                    <img src='' alt="logo"/>
+                    <img src={logo} alt="logo"/>
                 </Link>
 
                 <nav className='header-menu '>
@@ -312,19 +298,19 @@ const Header = () => {
 
                         <li className='menu-item'>
                             <Link className='menu-link' to={''}>
-                                <span>КИБЕРСПОРТ</span>
+                                <span>CYBERSPORT</span>
                             </Link>
                         </li>
 
                         <li className='menu-item'>
                             <Link className='menu-link' to={''}>
-                                <span>ПОКЕР</span>
+                                <span>POKER</span>
                             </Link>
                         </li>
 
                         <li className='menu-item'>
                             <Link className='menu-link' to={''}>
-                                <span>ТОТО</span>
+                                <span>TOTO</span>
                             </Link>
                         </li>
 
