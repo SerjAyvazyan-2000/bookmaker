@@ -9,7 +9,7 @@ import slot5 from "../../assets/images/slot5.webp";
 
 import playicon from "../../assets/images/play.svg";
 
-const CasinoGames = ({title,icon,slidesPerView}) => {
+const CasinoGames = ({title,icon,slidesPerView, gamesList}) => {
     const swiperRef = useRef(null);
 
 
@@ -28,6 +28,7 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
 
         </div>
         <div className='casino-games-cnt'>
+
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={20}
@@ -58,271 +59,308 @@ const CasinoGames = ({title,icon,slidesPerView}) => {
                 }}
 
             >
-                <SwiperSlide>
-                    <div
-                         className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot1} alt=""/>
-                        </div>
-
-
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
+                <Swiper
+                    modules={[Navigation]}
+                    spaceBetween={20}
+                    slidesPerView={slidesPerView}
+                    navigation
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    breakpoints={{
+                        320: {slidesPerView: 1, spaceBetween: 10},
+                        768: {slidesPerView: 2, spaceBetween: 15},
+                        1024: {slidesPerView: 3},
+                        1440: {slidesPerView: 4},
+                        1600: {slidesPerView: 5},
+                        1920: {slidesPerView: slidesPerView},
+                    }}
+                >
+                    {gamesList && gamesList.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className='games-item G-image G-center'>
+                                <div className='games-item-text'>
+                                    <img src={item.img} alt=""/>
+                                </div>
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                         className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot2} alt=""/>
-                        </div>
-                        <div className='game-icon-clue icon-clue-red'>
-                            <i className='icon icon-lightning'></i>
-                        </div>
-                        <div className='game-icon-clue icon-clue-blue'>
-                            <i className='icon icon-cup'></i>
-                        </div>
-
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                         className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot3} alt=""/>
-                        </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*         className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot1} alt=""/>*/}
+                {/*        </div>*/}
 
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                        </div>
+                {/*        </div>*/}
 
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div
-                         className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot4} alt=""/>
-                        </div>
-                        <div className='game-icon-clue icon-clue-red'>
-                            <i className='icon icon-lightning'></i>
-                        </div>
-                        <div className='game-icon-clue icon-clue-blue'>
-                            <i className='icon icon-cup'></i>
-                        </div>
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*         className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot2} alt=""/>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-red'>*/}
+                {/*            <i className='icon icon-lightning'></i>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-blue'>*/}
+                {/*            <i className='icon icon-cup'></i>*/}
+                {/*        </div>*/}
 
-                        </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div
-                         className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot5} alt=""/>
-                        </div>
+                {/*        </div>*/}
 
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                        className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot1} alt=""/>
-                        </div>
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*         className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot3} alt=""/>*/}
+                {/*        </div>*/}
 
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                        </div>
+                {/*        </div>*/}
 
-                    </div>
-                </SwiperSlide>
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*         className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot4} alt=""/>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-red'>*/}
+                {/*            <i className='icon icon-lightning'></i>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-blue'>*/}
+                {/*            <i className='icon icon-cup'></i>*/}
+                {/*        </div>*/}
 
-                <SwiperSlide>
-                    <div
-                        className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot2} alt=""/>
-                        </div>
-                        <div className='game-icon-clue icon-clue-red'>
-                            <i className='icon icon-lightning'></i>
-                        </div>
-                        <div className='game-icon-clue icon-clue-blue'>
-                            <i className='icon icon-cup'></i>
-                        </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*        </div>*/}
 
-                        </div>
-
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                        className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot3} alt=""/>
-                        </div>
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*         className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot5} alt=""/>*/}
+                {/*        </div>*/}
 
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                        </div>
+                {/*        </div>*/}
 
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div
-                        className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot4} alt=""/>
-                        </div>
-                        <div className='game-icon-clue icon-clue-red'>
-                            <i className='icon icon-lightning'></i>
-                        </div>
-                        <div className='game-icon-clue icon-clue-blue'>
-                            <i className='icon icon-cup'></i>
-                        </div>
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div
-                        className='games-item G-image  G-center'>
-                        <div className='games-item-text'>
-                            <img src={slot5} alt=""/>
-                        </div>
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*        className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot1} alt=""/>*/}
+                {/*        </div>*/}
 
 
-                        <div className='game-item-sub'>
-                            <h3 className='game-sub-title'>Playson</h3>
-                            <div className='game-sub-play'>
-                                <img src={playicon} alt=""/>
-                            </div>
-                            <div className='game-sub-star'>
-                                <i className='icon icon-star-blue'></i>
-                            </div>
-                            <div className='game-sub-btn'>
-                                <button>Play for free</button>
-                            </div>
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
 
-                        </div>
+                {/*        </div>*/}
 
-                    </div>
-                </SwiperSlide>
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*        className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot2} alt=""/>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-red'>*/}
+                {/*            <i className='icon icon-lightning'></i>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-blue'>*/}
+                {/*            <i className='icon icon-cup'></i>*/}
+                {/*        </div>*/}
+
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
+
+                {/*        </div>*/}
+
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*        className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot3} alt=""/>*/}
+                {/*        </div>*/}
+
+
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
+
+                {/*        </div>*/}
+
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*        className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot4} alt=""/>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-red'>*/}
+                {/*            <i className='icon icon-lightning'></i>*/}
+                {/*        </div>*/}
+                {/*        <div className='game-icon-clue icon-clue-blue'>*/}
+                {/*            <i className='icon icon-cup'></i>*/}
+                {/*        </div>*/}
+
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
+
+                {/*        </div>*/}
+
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
+                {/*<SwiperSlide>*/}
+                {/*    <div*/}
+                {/*        className='games-item G-image  G-center'>*/}
+                {/*        <div className='games-item-text'>*/}
+                {/*            <img src={slot5} alt=""/>*/}
+                {/*        </div>*/}
+
+
+                {/*        <div className='game-item-sub'>*/}
+                {/*            <h3 className='game-sub-title'>Playson</h3>*/}
+                {/*            <div className='game-sub-play'>*/}
+                {/*                <img src={playicon} alt=""/>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-star'>*/}
+                {/*                <i className='icon icon-star-blue'></i>*/}
+                {/*            </div>*/}
+                {/*            <div className='game-sub-btn'>*/}
+                {/*                <button>Play for free</button>*/}
+                {/*            </div>*/}
+
+                {/*        </div>*/}
+
+                {/*    </div>*/}
+                {/*</SwiperSlide>*/}
             </Swiper>
 
         </div>

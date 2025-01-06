@@ -6,27 +6,86 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import {A11y, Autoplay, Pagination} from "swiper/modules";
-import smail from '../../assets/icons/smail.svg'
 import lightningGold from '../../assets/icons/lightningGold.svg'
+import newYear from '../../assets/images/newYear.svg'
+
 import crash from '../../assets/images/CRASH.svg'
 import mostbet from '../../assets/images/MOSTBET.svg'
 import recommend from '../../assets/images/RECOMMEND.svg'
-import newYear from '../../assets/images/newYear.svg'
 import allGames from '../../assets/images/allGames.svg'
 import promotionBanner from '../../assets/images/promotionBanner.svg'
-
+import  promotions from '../../assets/images/promotion.svg'
 import CasinoGames from "../../components/casinoGames/casinoGames";
 import playicon from "../../assets/images/play.svg";
 import {Link} from "react-router-dom";
-import slot1 from "../../assets/images/slot1.webp";
-import slot2 from "../../assets/images/slot2.webp";
-import slot3 from "../../assets/images/slot3.webp";
-import slot5 from "../../assets/images/slot5.webp";
+
 import casinoSlide1 from "../../assets/images/casinoSlide1.webp";
 import casinoSlide2 from "../../assets/images/casinoSlide2.webp";
 import casinoSlide3 from "../../assets/images/casinoSlide3.webp";
 import casinoSlide4 from "../../assets/images/casinoSlide4.webp";
 import casinoSlide5 from "../../assets/images/casinoSlide5.webp";
+import slot1 from "../../assets/images/slot1.webp";
+import slot2 from "../../assets/images/slot2.webp";
+import slot3 from "../../assets/images/slot3.webp";
+import slot4 from "../../assets/images/slot4.webp";
+import slot5 from "../../assets/images/slot5.webp";
+import slot6 from "../../assets/images/slot6.webp";
+import slot7 from "../../assets/images/slot7.webp";
+import slot8 from "../../assets/images/slot8.webp";
+import aviator1 from "../../assets/images/aviator1.webp";
+import aviator2 from "../../assets/images/aviator2.webp";
+import aviator3 from "../../assets/images/aviator3.webp";
+import aviator4 from "../../assets/images/aviator5.webp";
+import aviator6 from "../../assets/images/aviator6.webp";
+import aviator7 from "../../assets/images/aviator7.webp";
+import aviator8 from "../../assets/images/aviator8.webp";
+import aviator9 from "../../assets/images/aviator9.webp";
+import aviator10 from "../../assets/images/aviator10p.webp";
+import aviator11 from "../../assets/images/aviator11.webp";
+import aviator12 from "../../assets/images/aviator12.webp";
+import aviator13 from "../../assets/images/aviator13.webp";
+
+import mostbet1 from "../../assets/images/mostbet1.webp";
+import mostbet2 from "../../assets/images/mostbet2.webp";
+import mostbet3 from "../../assets/images/mostbet3.webp";
+import mostbet4 from "../../assets/images/mostbet4.webp";
+import mostbet5 from "../../assets/images/mostbet5.webp";
+import mostbet6 from "../../assets/images/mostbet6.webp";
+import mostbet7 from "../../assets/images/mostbet7.webp";
+import mostbet8 from "../../assets/images/mostbet8.webp";
+import mostbet9 from "../../assets/images/mostbet9.webp";
+import mostbet10 from "../../assets/images/mostbet10.webp";
+import mostbet11 from "../../assets/images/mostbet11.webp";
+import mostbet12 from "../../assets/images/mostbet12.webp";
+import mostbet13 from "../../assets/images/mostbet13.webp";
+import mostbet14 from "../../assets/images/mostbet14.webp";
+
+import recommended1 from "../../assets/images/recommended1.webp";
+import recommended2 from "../../assets/images/recommended2.webp";
+import recommended3 from "../../assets/images/recommended3.webp";
+import recommended4 from "../../assets/images/recommended4.webp";
+import recommended5 from "../../assets/images/recommended5.webp";
+import recommended6 from "../../assets/images/recommended6.webp";
+import recommended7 from "../../assets/images/recommended7.webp";
+import recommended8 from "../../assets/images/recommended8.webp";
+import recommended9 from "../../assets/images/recommended9.webp";
+import recommended10 from "../../assets/images/recommended10.webp";
+import recommended11 from "../../assets/images/recommended11.webp";
+import recommended12 from "../../assets/images/recommended12.webp";
+import recommended13 from "../../assets/images/recommended13.webp";
+import recommended14 from "../../assets/images/recommended14.webp";
+import promotionSlide1 from "../../assets/images/promotionSlide1.webp";
+import promotionSlide2 from "../../assets/images/promotionSlide2.webp";
+import promotionSlide3 from "../../assets/images/promotionSlide3.webp";
+
+
+import newYear1 from "../../assets/images/newYear2.webp";
+import newYear2 from "../../assets/images/newYear8.webp";
+import newYear3 from "../../assets/images/newYear3.webp";
+import newYear4 from "../../assets/images/newYear4.webp";
+import newYear5 from "../../assets/images/newYear5.webp";
+import newYear6 from "../../assets/images/newYear6.webp";
+import newYear7 from "../../assets/images/newYear7.webp";
 
 const Casino = () => {
     const swiperRef = useRef(null);
@@ -38,6 +97,188 @@ const Casino = () => {
             document.body.style.backgroundColor = '';
         };
     }, []);
+
+    const gamesSlots = [
+        {
+            img: slot1,
+        },
+        {
+            img: slot2,
+        },
+        {
+            img: slot3,
+        },
+        {
+            img: slot4,
+        },
+        {
+            img: slot5,
+        },
+        {
+            img: slot6,
+        },
+        {
+            img: slot7,
+        },
+        {
+            img: slot8,
+        },
+    ]
+
+    const gamesAviator = [
+        {
+            img:aviator1,
+        },
+        {
+            img:aviator2,
+        },
+        {
+            img:aviator3,
+        },
+        {
+            img:aviator4,
+        },
+        {
+            img:aviator6,
+        },
+        {
+            img:aviator7,
+        },
+        {
+            img:aviator8,
+        },
+        {
+            img:aviator9,
+        },
+        {
+            img:aviator10,
+        },
+        {
+            img:aviator11,
+        },
+        {
+            img:aviator12,
+        },
+        {
+            img:aviator13,
+        },
+    ]
+
+    const gamesMostBet = [
+        {
+            img:mostbet1,
+        },
+        {
+            img:mostbet2,
+        },
+        {
+            img:mostbet3,
+        },
+        {
+            img:mostbet4,
+        },
+        {
+            img:mostbet5,
+        },
+        {
+            img:mostbet6,
+        },
+        {
+            img:mostbet7,
+        },
+        {
+            img:mostbet8,
+        },
+        {
+            img:mostbet9,
+        },
+        {
+            img:mostbet10,
+        },
+        {
+            img:mostbet11,
+        },
+        {
+            img:mostbet12,
+        },
+        {
+            img:mostbet13,
+        },
+        {
+            img:mostbet14,
+        },
+    ]
+
+    const gamesRecommended = [
+        {
+            img:recommended1,
+        },
+        {
+            img:recommended2,
+        },
+        {
+            img:recommended3,
+        },
+        {
+            img:recommended4,
+        },
+        {
+            img:recommended5,
+        },
+        {
+            img:recommended6,
+        },
+        {
+            img:recommended7,
+        },
+        {
+            img:recommended8,
+        },
+        {
+            img:recommended9,
+        },
+        {
+            img:recommended10,
+        },
+        {
+            img:recommended11,
+        },
+        {
+            img:recommended12,
+        },
+        {
+            img:recommended13,
+        },
+        {
+            img:recommended14,
+        },
+    ]
+
+    const newYearList = [
+        {
+            img:newYear1,
+        },
+        {
+            img:newYear2,
+        },
+        {
+            img:newYear3,
+        },
+        {
+            img:newYear4,
+        },
+        {
+            img:newYear5,
+        },
+        {
+            img:newYear6,
+        },
+        {
+            img:newYear7,
+        },
+
+    ]
+
 
     return <div className='casino-section'>
         <div className='casino-slider-block'>
@@ -55,8 +296,6 @@ const Casino = () => {
                             <img src={casinoSlide1} alt=""/>
                         </div>
                     </SwiperSlide>
-
-
                     <SwiperSlide>
                         <div className='casino-slider-item'>
                             <img src={casinoSlide2} alt=""/>
@@ -72,7 +311,6 @@ const Casino = () => {
                             <img src={casinoSlide4} alt=""/>
                         </div>
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <div className='casino-slider-item'>
                             <img src={casinoSlide5} alt=""/>
@@ -262,17 +500,61 @@ const Casino = () => {
                 </div>
 
                 <div className='casino-games-list G-flex-column'>
-                    <CasinoGames slidesPerView={6} title={'For you'} icon={smail}/>
 
-                    <CasinoGames slidesPerView={6} title={'TOP GAMES'} icon={lightningGold}/>
+                    <CasinoGames gamesList={gamesSlots} slidesPerView={6} title={'TOP GAMES'} icon={lightningGold}/>
 
-                    <CasinoGames slidesPerView={6} title={'CRASH GAMES'} icon={crash}/>
+                    <CasinoGames gamesList={gamesAviator} slidesPerView={6} title={'CRASH GAMES'} icon={crash}/>
 
-                    <CasinoGames slidesPerView={6} title={'MOSTBET GAMES'} icon={mostbet}/>
+                    <CasinoGames gamesList={gamesMostBet} slidesPerView={6} title={'MOSTBET GAMES'} icon={mostbet}/>
 
-                    <CasinoGames slidesPerView={6} title={'WE RECOMMEND'} icon={recommend}/>
+                    <CasinoGames gamesList={gamesRecommended} slidesPerView={6} title={'WE RECOMMEND'} icon={recommend}/>
 
-                    <CasinoGames slidesPerView={6} title={'New Year'} icon={newYear}/>
+                    <div className='promotion-block'>
+                        <div className='casino-games-header G-justify-between'>
+                            <div className='games-header-info G-align-center'>
+                                <div className='games-header-icon'>
+                                    <img src={promotions} alt=""/>
+                                </div>
+                                <h2 className='games-header-title'>Promotions</h2>
+                            </div>
+                            <div className='games-slider-arrows G-align-center'>
+                                <i onClick={() => swiperRef.current?.slidePrev()} className='icon icon-arrow-right'></i>
+                                <i onClick={() => swiperRef.current?.slideNext()} className='icon icon-arrow-left'></i>
+                            </div>
+
+                        </div>
+
+
+                        <div className='promotion-slider-body'>
+                            <Swiper
+                                slidesPerView={3}
+                                spaceBetween={20}
+                                loop={true}
+
+                            >
+                                <SwiperSlide>
+                                    <div className='promotion-slider-item'>
+                                        <img src={promotionSlide1} alt=""/>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className='promotion-slider-item'>
+                                        <img src={promotionSlide2} alt=""/>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className='promotion-slider-item'>
+                                        <img src={promotionSlide3} alt=""/>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+
+                        </div>
+
+                    </div>
+
+                    <CasinoGames gamesList={newYearList} slidesPerView={6} title={'New Year'} icon={newYear}/>
 
                     <div className='casino-all-games'>
                         <div className='casino-games-header G-justify-between'>
@@ -392,28 +674,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot1} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={slot1} alt=""/>
+                                    <img src={aviator1} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -433,7 +694,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot2} alt=""/>
+                                    <img src={aviator2} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -453,7 +714,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot3} alt=""/>
+                                    <img src={aviator3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -473,7 +734,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot3} alt=""/>
+                                    <img src={aviator4} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -493,7 +754,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot5} alt=""/>
+                                    <img src={aviator6} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -513,28 +774,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot1} alt=""/>
-                                </div>
-
-                                <div className='game-item-sub'>
-                                    <h3 className='game-sub-title'>Playson</h3>
-                                    <div className='game-sub-play'>
-                                        <img src={playicon} alt=""/>
-                                    </div>
-                                    <div className='game-sub-star'>
-                                        <i className='icon icon-star-blue'></i>
-                                    </div>
-                                    <div className='game-sub-btn'>
-                                        <button>Play for free</button>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div className='games-item G-image  G-center'>
-                                <div className='games-item-text'>
-                                    <img src={slot1} alt=""/>
+                                    <img src={aviator7} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -554,7 +794,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot2} alt=""/>
+                                    <img src={aviator8} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -574,7 +814,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot3} alt=""/>
+                                    <img src={mostbet} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -594,7 +834,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot3} alt=""/>
+                                    <img src={mostbet2} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -614,7 +854,7 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot5} alt=""/>
+                                    <img src={mostbet3} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
@@ -634,7 +874,527 @@ const Casino = () => {
                             </div>
                             <div className='games-item G-image  G-center'>
                                 <div className='games-item-text'>
-                                    <img src={slot1} alt=""/>
+                                    <img src={mostbet4} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet5} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet6} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet7} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet7} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet8} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet9} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet10} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet10} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet11} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet12} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet13} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={mostbet14} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended1} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended2} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended3} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended4} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended5} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended6} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended7} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended8} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended9} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended10} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended11} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended12} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended13} alt=""/>
+                                </div>
+
+                                <div className='game-item-sub'>
+                                    <h3 className='game-sub-title'>Playson</h3>
+                                    <div className='game-sub-play'>
+                                        <img src={playicon} alt=""/>
+                                    </div>
+                                    <div className='game-sub-star'>
+                                        <i className='icon icon-star-blue'></i>
+                                    </div>
+                                    <div className='game-sub-btn'>
+                                        <button>Play for free</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className='games-item G-image  G-center'>
+                                <div className='games-item-text'>
+                                    <img src={recommended14} alt=""/>
                                 </div>
 
                                 <div className='game-item-sub'>
