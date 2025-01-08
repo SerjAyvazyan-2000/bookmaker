@@ -36,6 +36,7 @@ import qr from '../../assets/images/qr.svg'
 import faq from '../../assets/images/faq.svg'
 import {Link} from "react-router-dom";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {useBalance} from "../../BalanceContext";
 
 
 const Replenish = () => {
@@ -48,6 +49,7 @@ const Replenish = () => {
     const [activeIndex, setActiveIndex] = useState(1);
     const [showPaymentMethod, setShowPaymentMethod] = useState(false);
     const [activeUsdt, setActiveUsdt] = useState(false);
+    const { balance } = useBalance();
 
 
     const handleButtonClick = (value, index) => {
@@ -115,7 +117,7 @@ const Replenish = () => {
                                         <i className='icon icon-selection'></i>
                                         <div className='item-balance-texts'>
                                             <p>balance</p>
-                                            <span>0,00 so'm</span>
+                                            <span>{balance} $</span>
                                         </div>
                                         <div className='item-balance-icon'>
                                             <i className='icon icon-balance'></i>
